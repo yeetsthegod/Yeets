@@ -1,33 +1,93 @@
-<!DOCTYPE html>
+
 <html>
     <head>
-        <title>Login page</title>
+		<a class="twitter-timeline" data-width="300" data-height="750" data-dnt="true" href="https://twitter.com/c0mmit">Tweets by c0mmit</a>
+		<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <meta charset="utf-8" />
+        <title>C0MMIT</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel='prefetch' href='https://short.elmnts.co/html/4cmaatl'>
+	    <link rel="icon" href="assets/favicon.ico" type="image/png">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.marquee/1.3.9/jquery.marquee.min.js"></script>
+		<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-83202278-1', 'auto');
+		ga('send', 'pageview');
+
+		</script>
     </head>
-    <body>
-        <h1>Login</h1>
-        <form name="login">
-            Username<input type="text" name="userid"/>
-            Password<input type="password" name="pswrd"/>
-            <input type="button" onclick="check(this.form)" value="Login"/>
-            <input type="reset" value="Cancel"/>
-        </form>
-        <script language="javascript">
-            function check(form) { /*function to check userid & password*/
-                /*the following code checkes whether the entered userid and password are matching*/
-                if(form.userid.value == "dankass" && form.pswrd.value == "fuckingclients") {
-                    window.open('webclient.html')/*opens the target page while Id & password matches*/
-                }
-                else {
-                    alert("Error Password or Username")/*displays error message*/
-                }
-            }
-        </script>
+<script type="text/javascript">
+    var numberOfImages = 2
+    var image = new Array(numberOfImages+1)
+    image[0]= "assets/1.gif"
+    image[1]= "assets/2.gif"
+    image[2]= "assets/3.gif"
+    
+    function randomNumber(){
+    var randomLooper = -1
+    while (randomLooper < 0 || randomLooper > numberOfImages || isNaN(randomLooper)){ randomLooper = parseInt(Math.random()*(numberOfImages+1))
+    }
+    return randomLooper
+    }
+    var randomsub = randomNumber()
+    var imageFile = image[randomsub]
+    document.write ('<body background= "' + imageFile + '" oncontextmenu="return false;" onkeydown="return false;" onmousedown="return false;">')
+</script>
+<div id="center" >
+<pre>
+<a href="http://c0mmit.site"><font color="green">
+               :                                                           
+        .,    t#,                               
+       ,Wt   ;##W.                                              t           
+      i#D.  :#L:WE             ..       :           ..       :  Ej  GEEEEEEEL
+     f#f   .KG  ,#D           ,W,     .Et          ,W,     .Et  E#,    L#K   
+   .D#i    EE    ;#f         t##,    ,W#t         t##,    ,W#t  E#t    t#E   
+  :KW,    f#.     t#i       L###,   j###t        L###,   j###t  E#t    t#E   
+  t#f     :#G     GK      .E#j##,  G#fE#t      .E#j##,  G#fE#t  E#t    t#E   
+   ;#G     ;#L   LW.     ;WW; ##,:K#i E#t     ;WW; ##,:K#i E#t  E#t    t#E   
+    :KE.    t#f f#:     j#E.  ##f#W,  E#t    j#E.  ##f#W,  E#t  E#t    t#E    
+     .DW:    f#D#;    .D#L    ###K:   E#t  .D#L    ###K:   E#t  E#t    t#E   
+       L#,    G#t    :K#t     ##D.    E#t :K#t     ##D.    E#t  E#t    t#E   
+        jt     t     ...      #G      ..  ...      #G      ..   E#t     fE   
+                              j                    j            ,;.      :   
+</a>
+</font>
+</pre>      
+                        <h1><pre>VICTIMS</pre></h1>
+			<pre><a href="https://twitter.com/slenderbird64" target="_blank">SlenderBird</a></pre>
+                        <pre><a href="https://namemc.com/s/JackedByCommit*" target="_blank">All Mc Accounts Jacked</a></pre>
+                        <pre><a href="https://twitter.com/LizzieClouds" target="_blank">Lizzie Clouds</a></pre>
+                        <pre><a href="https://ghostbin.com/paste/5f7nt" target="_blank"> Logan Tindell</a></pre>
+                        <pre><a href="https://ghostbin.com/paste/csjmj" target="_blank">Zuiy a.k.a Syrup boy</a></pre>
+                        <pre><a href="https://ghostbin.com/paste/yosrm" target="_blank">SurvivalLater a.k.a Alex Perry [New]</a></pre>
+                        
+        </div>
     </body>
+	<script type="text/javascript">
+    var numberOfSongs = 3
+    var sound = new Array(numberOfSongs+1)
+    sound[0]= "music/1.mp3"
+    sound[1]= "music/2.mp3"
+    sound[2]= "music/3.mp3"
+    sound[3]= "music/4.mp3"
+    
+    function randomNumber(){
+    var randomLooper = -1
+    while (randomLooper < 0 || randomLooper > numberOfSongs || isNaN(randomLooper)){ randomLooper = parseInt(Math.random()*(numberOfSongs+1))
+    }
+    return randomLooper
+    }
+    var randomsub = randomNumber()
+    var soundFile = sound[randomsub]
+    document.write ('<audio id="sound" loop autoplay preload><source src= "' + soundFile + '" hidden=true type="audio/mpeg" autostart=true loop=true>')
+</script>
 </html>
-<body style="background-color:white;">
 
-
-
-
-</body>
-</html>
+<!-- Hosting24 Analytics Code -->
+<script type="text/javascript" src="http://stats.hosting24.com/count.php"></script>
+<!-- End Of Analytics Code -->
