@@ -66,29 +66,40 @@ span.psw {
 </style>
 <body>
 
-<h2>Yeets Host</h2>
-
-<form action="/dank.html">
+<h2>Login Form</h2>
+    
+    <form action="/action_page.php">
   <div class="imgcontainer">
     <img src="img_avatar2.png" alt="Avatar" class="avatar">
   </div>
+  
+<article>
+  <body>
+        <h1>Login</h1>
+        <form name="login">
+            Username <input type="text" name="userid"/>
+            Password <input type="password" name="pswrd"/>
+            <input type="button" onclick="check(this.form)" value="Login"/>
+            <input type="reset" value="Cancel"/>
+        </form>
+        <script language="javascript">
+            function check(form) { /*function to check userid & password*/
+                /*the following code checkes whether the entered userid and password are matching*/
+                if(form.userid.value == "dankass" && form.pswrd.value == "fuckingclients") {
+                    window.open('webclient.html')/*opens the target page while Id & password matches*/
+                }
+                else {
+                    alert("Error Password or Username")/*displays error message*/
+                }
+            }
+        </script>
+    </body>
+    </p>
+</article>
 
-  <div class="container">
-    <label><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="dankass" required>
+<footer>Copyright &copy; Yeets</footer>
 
-    <label><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="fuckingclients" required>
-        
-    <button type="submit">Login</button>
-    <input type="checkbox" checked="checked"> Remember me
-  </div>
-
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
-  </div>
-</form>
+</div>
 
 </body>
 </html>
